@@ -1,0 +1,10 @@
+{% extends 'main_page.html' %}
+
+{% block content %}
+    <div class = 'page-header'>
+        <h2>This page is Information Page</h2>
+        <a href="{{url_for('basic')}}">go back to main page</a>
+        <br>
+        <a href = "{{ url_for('temp') }}">go temp</a>
+    </div>
+{% endblock %}

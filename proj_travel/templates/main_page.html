@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello this is main page</title>
+</head>
+<body>
+    <div class = 'page-header'>
+        <h1> Temp main page</h1>
+        <h3> Click to move </h3>
+        <div class="Menu-bar">
+            <ul class="menu-bar">
+                <li><a href = "{{url_for('index')}}">index</a></li>
+                <li><a href = "{{url_for('temp')}}">temp</a></li>
+            </ul>
+        </div>
+        <hr/>
+    </div>
+    <div class = 'content container'>
+        <div class = 'row'>
+            <div class="col-md-8">
+                {% block content %}
+                    <h3>------Base Homepage-----</h3>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+    <div class = "page-bottom">
+    </div>
+</body>
+</html>
